@@ -50,6 +50,6 @@ fn main(@builtin(position) screenPos: vec4<f32>) -> @location(0) vec4f
     var finalColor = diffuseColor.rgb * totalLightContrib;
     return vec4(finalColor, 1);
 
-    // return vec4(f32(Cx) / ${Nx}, f32(Cy) / ${Ny}, f32(Cz) / ${Nz}, 1);
+    // return vec4(f32(Cz) / ${Nz}, f32(Cz) / ${Nz}, f32(Cz) / ${Nz}, 1);
     // return vec4(f32(clusters[clusterIdx]) / ${clusterMaxLights}, f32(clusters[clusterIdx]) / ${clusterMaxLights}, f32(clusters[clusterIdx]) / ${clusterMaxLights}, 1); // cluster lights visualization
 }
