@@ -15,11 +15,8 @@ Most of the conceptual understanding of this project and various implementation 
 
 ### Live Demo
 
-[![](img/splash.png)](http://brycej217.github.io/Project4-WebGPU-Forward-Plus-and-Clustered-Deferred)
-
-### Demo Video/GIF
-
-![](img/video.gif)
+Click the gif to see a live demo in your browser!
+[![](img/video.gif)](http://brycej217.github.io/Project4-WebGPU-Forward-Plus-and-Clustered-Deferred)
 
 ## Clustering
 
