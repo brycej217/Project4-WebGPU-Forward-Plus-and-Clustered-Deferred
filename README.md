@@ -19,7 +19,8 @@ Most of the conceptual understanding of this project and various implementation 
 
 ### Demo Video/GIF
 
-![](img/video.mp4)
+<video src="img/video.mp4" controls loop muted playsinline width="640">
+</video>
 
 ## Clustering
 
