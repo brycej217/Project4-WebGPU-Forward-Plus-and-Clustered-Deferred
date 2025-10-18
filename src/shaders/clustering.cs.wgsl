@@ -88,8 +88,8 @@ fn main(@builtin(global_invocation_id) globalIdx: vec3u)
     // for each cluster, determine min max aabb boundaries in NDC space and view space
     let eyePos = vec3f(0.f, 0.f, 0.f);
 
-    let tileX = ${width}u / ${Nx}u;
-    let tileY = ${height}u / ${Ny}u;
+    let tileX = u32(${width}) / ${Nx}u;
+    let tileY = u32(${height}) / ${Ny}u;
 
     let minPointSS = vec4(f32(globalIdx.x) * f32(tileX), f32(globalIdx.y) * f32(tileY), -1.0, 1.0);
     let maxPointSS = vec4((f32(globalIdx.x) + 1f) * f32(tileX), (f32(globalIdx.y) + 1f) * f32(tileY), -1.0, 1.0);
