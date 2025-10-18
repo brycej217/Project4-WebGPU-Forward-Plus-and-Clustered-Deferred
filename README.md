@@ -19,7 +19,7 @@ Most of the conceptual understanding of this project and various implementation 
 
 ### Demo Video/GIF
 
-[![](img/video.mp4)]
+![](img/video.mp4)
 
 ## Clustering
 
