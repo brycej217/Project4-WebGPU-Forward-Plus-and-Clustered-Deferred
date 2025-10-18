@@ -41,12 +41,11 @@ export class ForwardPlusRenderer extends renderer.Renderer {
           visibility: GPUShaderStage.FRAGMENT,
           buffer: { type: 'storage' },
         },
-        {
-          // light index array
+        { // light index array
           binding: 3,
           visibility: GPUShaderStage.FRAGMENT,
-          buffer: { type: 'storage' },
-        },
+          buffer: {type: 'storage'}
+        }
       ],
     })
 
@@ -65,13 +64,12 @@ export class ForwardPlusRenderer extends renderer.Renderer {
         {
           // cluster light indices
           binding: 2,
-          resource: { buffer: this.lights.clusterBuffer },
+          resource: { buffer: this.lights.clusterBuffer},
         },
-        {
-          // light index buffer
+        { // light index buffer
           binding: 3,
-          resource: { buffer: this.lights.lightIndicesBuffer },
-        },
+          resource: {buffer: this.lights.lightIndicesBuffer }
+        }
       ],
     })
 
@@ -123,11 +121,11 @@ export class ForwardPlusRenderer extends renderer.Renderer {
     // - run the clustering compute shader
     // - run the main rendering pass, using the computed clusters for efficient lighting
 
-    const encoder = renderer.device.createCommandEncoder()
+    const encoder = renderer.device.createCommandEncoder();
     const canvasTextureView = renderer.context.getCurrentTexture().createView()
 
     // compute pass
-    this.lights.doLightClustering(encoder)
+    this.lights.doLightClustering(encoder);
 
     // graphics pass
     const renderPass = encoder.beginRenderPass({
